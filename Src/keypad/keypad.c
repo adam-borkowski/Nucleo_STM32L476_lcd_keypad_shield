@@ -35,10 +35,10 @@ uint16_t keypad_read_key(ADC_HandleTypeDef* hadc)
 	{
 		return KEY_RIGHT;
 	}
-	else if (adc_readout > 4050 && adc_readout < 5050)
-	{
-		return KEY_SELECT;
-	}
+//	else if (adc_readout > 4050 && adc_readout < 5050)
+//	{
+//		return KEY_SELECT;  // FIXME: SELECT i NONE maja taki sam odczyt z ADC. HW problem?
+//	}
 
 	return KEY_NONE;
 }
